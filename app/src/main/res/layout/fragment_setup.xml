@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/setuplayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    tools:context=".SetupFragment">
+
+    <EditText
+        android:id="@+id/addresstext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@id/textforenemy"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textforenemy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/adversary_below"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@id/radioGroup" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/imageView">
+        <RadioButton
+            android:id="@+id/chinabutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="People's Republic of China (5 MT warhead)"
+            android:textColor="@color/colorPrimary"
+            android:buttonTint="@color/colorPrimary"/>
+
+        <RadioButton
+            android:id="@+id/russiabutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Russian Federation (550 kT warhead)"
+            android:textColor="@color/colorPrimary"
+            android:buttonTint="@color/colorPrimary"/>
+
+        <RadioButton
+            android:id="@+id/northkoreabutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Democratic People's Republic of North Korea (50 kT)"
+            android:textColor="@color/colorPrimary"
+            android:buttonTint="@color/colorPrimary"/>
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icbm"
+        android:adjustViewBounds="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/submitfromsetup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submitrequest"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Nuclear Evasion</string>
+    <string name="API_KEY">AIzaSyC-9fr8YyfLOpjKpX9G0XOHbsxUUqHc6iA</string>
+    <string name="todo">pending name</string>
+    <string name="needs">pending name</string>
+    <string name="select_current">Simulate Current Location</string>
+    <string name="select_address">Simulate Address</string>
+    <string name="select_exit">Exit</string>
+    <string name="enter_address">Enter Address (Street Address City ZIP Code)</string>
+    <string name="current_selected">Mode: Using Current Location</string>
+    <string name="adversary_below">Select Adversary Below</string>
+    <string name="returntomain">Main Menu</string>
+    <string name="submitrequest">Get Closest Detonation</string>
+    <string name = "returntomap">Click To Return To Map</string>string>
+    <string name="Bomb_Type">Bomb Type: </string>
+    <string name="Shelters">Shelters near by</string>
+    <string name="Shelter">Learn About Effects and Shelters</string>
+    <string name="onExit">Simulator Video</string>
+    <string name="Effects">Effects</string>
+    <string name="youAreIn">You are in </string>
+
+
+    <string name="footer_msg">Footer Text</string>
+    <string name="header_msg">Header Text</string>
+    <string name="body_msg"> Body Message </string>
+
+
+
+
+    <string-array name="Zones">
+        <item>You are in Zone 5: Fallout</item>
+        <item>You are in Zone 1: Fireball</item>
+        <item>You are in Zone 2: Primary Air Blast</item>
+        <item>You are in Zone 3: Lethal Radiation</item>
+        <item>You are in Zone 4: Thermal radiation</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="Bombs">
+        <item>Russian R36 500 Kt Warhead</item>
+        <item>Chinese DF-5 ICBM 5 MT City Buster Warhead</item>
+        <item>North Korean Hwasong-15 ICBM 50 kt Warhead</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="narratives">
+        <item>This is the fallout zone. Radioactive fallout could be deadly over the next 48 hours. Stay indoors.</item>
+        <item>This zone represents the extent of the fireball portion of a surface detonation from a likely target location.  Survivability is zero at the surface or even underground to a depth of hundreds of feet.  Evacuation from this area is the highest priority.</item>
+        <item>Strong, institutional buildings will be obliterated.  A few underground structures may survive, but lethality is still near certain due to oxygen evacuation from the entire blast area.  Overall fatality rate is near 100% from blast and typically at least 50% from radiation. Evacuation from this area is highly recommended.</item>
+        <item>Radiation within this zone will typically result in a fatality rate of 50-90% within weeks.  Some robust, thick concrete structures may provide enough protection from radiation that most people inside survive longer than a few weeks, although long term cancer risks increase.  Blast damage is classified as heavy, which means that most commercial and nearly all residential buildings will be destroyed.</item>
+        <item> This is the zone in which you are 100% likely to receive 3rd degree burns if skin is exposed.  Also, blast damage in the inner portion of this zone is medium (destroying residential buildings) tapering off to just windows breaking at the outer portion of the zone.</item>
+        <item></item>
+    </string-array>
+
+</resources>

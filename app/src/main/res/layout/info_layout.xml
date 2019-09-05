@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="#db1414"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/youAreIn"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/myLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:fillViewport="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bombType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/Bomb_Type"
+                android:textColor="#F44336"
+                android:textSize="25sp" />
+
+
+            <Button
+                android:id="@+id/returntomap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="@string/returntomap"
+                android:textColor="@android:color/black"
+                ads:layout_constraintBottom_toTopOf="@id/selectButton"
+                ads:layout_constraintTop_toBottomOf="@+id/appName" />
+
+            <RelativeLayout
+                android:id="@+id/header2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+
+                android:layout_gravity="center"
+                android:background="#000000">
+
+                <TextView
+                    android:id="@+id/header_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Effects"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/Effects_Report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentStart="true"
+
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/header3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+
+                android:layout_gravity="center"
+                android:background="#000000">
+
+                <TextView
+                    android:id="@+id/header_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Shelters"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/Supplies_Report"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:layout_alignParentStart="true"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/supplies_header"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+
+                android:layout_gravity="center"
+                android:background="#000000">
+
+                <TextView
+                    android:id="@+id/supplies_header_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Supplies"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>
