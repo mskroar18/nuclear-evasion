@@ -100,7 +100,7 @@
                     android:id="@+id/header_text3"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="Shelters"
+                    android:text="Supplies"
                     android:textColor="#FFFFFF"
                     android:textSize="25sp" />
             </RelativeLayout>
@@ -130,7 +130,7 @@
                     android:id="@+id/supplies_header_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Supplies"
+                    android:text="Shelters"
                     android:textColor="#FFFFFF"
                     android:textSize="25sp" />
             </RelativeLayout>
